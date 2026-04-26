@@ -15,15 +15,23 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
     <h1></h1>
     <h1></h1>
   </div>
+    <div id="child">   
+    <h1></h1>
+    <h1></h1>
+  </div>
 </div>
  */
 //Reactelemnt(object) = html(what browser understands)
 
 //if we want siblings or more than one elemnt in 3rd place we can pass an array insted of one value
-const parent = React.createElement("div", {id:"parent"},
+const parent = React.createElement("div", {id:"parent"},[
   React.createElement("div", {id:"child"},
-   [ React.createElement("h1",{},"Nested Div using React"),React.createElement("h1",{},"1st sibling Nested Div using React")]
-  )
-)
+   [ React.createElement("h1",{},"Nested Div using React"),
+    React.createElement("h1",{},"1st sibling Nested Div using React")]),
+      React.createElement("div", {id:"child2"},
+   [ React.createElement("h1",{},"Nested Div using React"),
+    React.createElement("h1",{},"2st sibling Nested Div using React")])
+  
+  ])
 
 root.render(parent)
