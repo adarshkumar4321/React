@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"))
     <h1></h1>
     <h1></h1>
   </div>
-    <div id="child">   
+  <div id="child">   
     <h1></h1>
     <h1></h1>
   </div>
