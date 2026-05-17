@@ -1,37 +1,33 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 
 const heading = React.createElement("h1",{id :"heading"},"Hello World from React")
 //creating a react elemnt. React element is nothing but JS object. This not an tag, it isa object 
 const root = ReactDOM.createRoot(document.getElementById("root"))
-//root.render(heading)
-// render function job is to take object and put that up inside root element. render method is converting into tag and put in root
-// console.log(heading)
 
 
-//Nested element
+// const jsxheading = (
+// <h1 className="heading">Hello this is JSX</h1>
+// );
 
-/* 
-<div id="parent">
-  <div id="child">   
-    <h1></h1>
-    <h1></h1>
-  </div>
-  <div id="child">   
-    <h1></h1>
-    <h1></h1>
-  </div>
+
+//React component
+
+const Title = () =>(<h1 className="head">Hello this is Component</h1>)
+
+const heading1 = (<h1>This is normal Js code</h1>)
+
+// we can call like this also
+// {Title()}
+const HeadingComponent = () => (
+<div id="conatiner"> 
+<Title/> 
+{heading1}
+<h1 className="heading">This is Heading using React Fcn component</h1>
 </div>
- */
-//Reactelemnt(object) = html(what browser understands)
+);
 
-//if we want siblings or more than one elemnt in 3rd place we can pass an array insted of one value
-const parent = React.createElement("div", {id:"parent"},[
-  React.createElement("div", {id:"child"},
-   [ React.createElement("h1",{},"Nested Div using React"),
-    React.createElement("h1",{},"1st sibling Nested Div using React")]),
-      React.createElement("div", {id:"child2"},
-   [ React.createElement("h1",{},"Nested Div using React"),
-    React.createElement("h1",{},"2st sibling Nested Div using React")])
-  
-  ])
 
-root.render(parent)
+
+//root.render(jsxheading)
+root.render(<HeadingComponent/>)
