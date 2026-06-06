@@ -1,0 +1,53 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.logo{
+    width: 100px;
+}
+.Nav-items{
+    padding: 0px 30px;
+}
+
+.Nav-items > ul{
+    display: flex;
+    font-size: 24px;
+    padding:10px;
+    margin: 10px;
+    
+}
+.Nav-items > ul > li{
+    padding:10px;
+    margin: 10px;
+    list-style-type:none
+
+}
+
+.restro-cont{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-card{
+    width: 250px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.res-card:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: 0.2s;
+}
+
+.resLogo{
+    width: 99%;
+    border-radius: 10px;
+}
+.resName,.resheading{
+    margin: 0px; 
+    padding: 2px; 
+}

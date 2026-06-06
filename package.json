@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This is react course",
   "scripts": {
-    "start" : "parcel index2.html",
+    "start" : "parcel Food.html",
     "build" : "parcel build index2.html",
     "test": "jest"
   },
