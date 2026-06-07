@@ -17,4 +17,23 @@ creats local server
  differential bundling - support older browsers
  Error handling
  Tree shaking - removes unwanted code
-  
+
+
+ 
+*Header 
+  - logo
+  - nav-items
+*Body
+  - searchbar
+  - Reasturant container
+   - Restro card
+     - image
+     - Name
+     - Cuisines
+     - rating
+*Footer
+  - Copyright
+  -links
+  -address
+  -contact
+ 
