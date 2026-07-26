@@ -37,3 +37,8 @@ creats local server
   -address
   -contact
  
+
+ There are two types of routing application in web app
+ 1) client side routing: here it loads the coponent from already loaded components.(starting all components are loaded). This won't refresh the page.
+ 2) server side roting : if i click on anchor tag, it sends a network call to aboutus page , fetches the html and renders into our page refreshes the whole page. 
+
